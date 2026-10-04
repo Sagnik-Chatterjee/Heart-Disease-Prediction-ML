@@ -1,0 +1,16 @@
+# Dataset
+EDA&Model_Build/heart.csv
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+.venv/
+
+# Environment variables
+.env
+
+# Jupyter
+.ipynb_checkpoints/

@@ -1,0 +1,233 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+/* Main container */
+
+.container {
+    width: 600px;
+    max-width: 100%;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Heading */
+
+.container h1 {
+    text-align: center;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+
+    color: #222;
+}
+
+
+.container > p {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+/* Form */
+
+#predictionForm {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Form group */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+
+/* Labels */
+
+.form-group label {
+    display: block;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #333;
+
+    margin-bottom: 7px;
+}
+
+
+/* Input and Select */
+
+.form-group input,
+.form-group select {
+    width: 100%;
+
+    padding: 12px 13px;
+
+    font-size: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    background: white;
+
+    transition: border-color 0.2s,
+                box-shadow 0.2s;
+}
+
+
+/* Focus */
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #4f46e5;
+
+    box-shadow:
+        0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+
+/* Predict button */
+
+button {
+    width: 100%;
+
+    padding: 13px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.2s,
+                transform 0.1s;
+}
+
+
+button:hover {
+    background: #4338ca;
+}
+
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+/* Result */
+
+#result {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+}
+
+
+#result h2 {
+    margin-bottom: 10px;
+
+    font-size: 21px;
+
+    color: #222;
+}
+
+
+#result p {
+    font-size: 17px;
+
+    color: #555;
+}
+
+
+/* Error */
+
+.error {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    color: #b91c1c;
+
+    background: #fef2f2;
+
+    border: 1px solid #fecaca;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+
+        align-items: flex-start;
+    }
+
+    .container {
+        margin-top: 20px;
+
+        padding: 25px 20px;
+    }
+
+    .container h1 {
+        font-size: 25px;
+    }
+
+}
